@@ -378,7 +378,7 @@
                         o = n.playerArr;
                     t[e].totalWins = o.reduce(((t, e) => t + n.players[e]?.wins), 0)
                     t[e].totalMatches = o.reduce(((t, e) => t + n.players[e]?.matches), 0)
-                    t[e].winRate = Math.floor(t[e].totalWins / t[e].totalMatches * 100)
+                    t[e].winRate = Math.round(t[e].totalWins / t[e].totalMatches * 100)
                 }
             }, z = () => {
                 h()
